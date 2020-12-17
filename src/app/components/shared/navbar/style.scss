@@ -1,0 +1,47 @@
+@import '../../../../styles.scss';
+// General Styles
+.navbar__brand {
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.navbar__list {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.navbar__list__item {
+    text-decoration: none;
+}
+
+.link {
+    color: $white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile menu */
+
+.navbar {
+    display: inline-flex;
+}
+
+.navbar__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list__item {
+    width: 100%;
+    text-align: center;
+}
