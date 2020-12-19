@@ -1,13 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-
 $white: #FFFFFF;
 $black: #1A1414;
 $grey: #221E1F;
 $green-white: #50B376;
 $green-black: #57B251;
+* {
+    margin: 0px;
+}
+
 body {
-    background-color: black;
-    color: white;
+    margin: 0px;
+    background-color: $black;
+    color: $white;
 }
 
 

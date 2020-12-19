@@ -1,7 +1,15 @@
 <nav class="navbar">
-    <a href="#" class="navbar__brand"><img src="../../../../assets/img/banner-ico.png" alt=""></a>
-    <ul class="navbar__list">
-        <li class="navbar__list__item"><a href="#" class="link">Home</a></li>
-        <li class="navbar__list__item"><a href="#" class="link">Search</a></li>
+    <div class="navbar__phoneView">
+        <a href="#" class="navbar__brand"><img src="../../../../assets/img/banner-ico.png" alt=""></a>
+        <a (click)="toggleMenu(menu)" href="#" class="link toggle">=</a>
+    </div>
+    <ul #menu class="navbar__list">
+        <li class="navbar__list__item">
+            <a href="#" class="link">Home</a>
+        </li>
+        <li class="navbar__list__item">
+            <a href="#" class="link">Search</a>
+        </li>
+
     </ul>
 </nav>

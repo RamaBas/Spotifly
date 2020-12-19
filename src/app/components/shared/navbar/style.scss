@@ -1,5 +1,11 @@
 @import '../../../../styles.scss';
 // General Styles
+.navbar {
+    background-color: $grey;
+    margin: 0px;
+    padding: 5px 20px;
+}
+
 .navbar__brand {
     img {
         width: 40px;
@@ -10,7 +16,6 @@
 .navbar__list {
     list-style-type: none;
     font-size: 16px;
-    padding: 15px 5px;
     white-space: nowrap;
 }
 
@@ -30,18 +35,56 @@
 
 /* Mobile menu */
 
-.navbar {
-    display: inline-flex;
-}
-
-.navbar__list {
+.navbar__phoneView {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
+.toggle {
+    font-size: 24px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    display: none;
+}
+
 .navbar__list__item {
-    width: 100%;
     text-align: center;
+}
+
+.toggleOn {
+    display: block;
+}
+
+.active {
+    color: red;
+}
+
+
+/* Desktop menu */
+
+@media all and (min-width: 900px) {
+    .navbar {
+        display: flex;
+    }
+    .toggle {
+        display: none;
+    }
+    .navbar__list {
+        margin-left: 30px;
+        display: flex;
+    }
+    .navbar__list__item {
+        padding-left: 20px
+    }
 }

@@ -12,5 +12,12 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  toggleMenu(menu){
+    if (menu.classList.toggle("toggleOn")) {
+      menu.classList.add('toggleOn');
+    } else {
+      menu.classList.remove('toggleOn');
+    }
+  }
 }
+
