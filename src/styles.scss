@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 $white: #FFFFFF;
 $black: #1A1414;
 $grey: #221E1F;
-$green-white: #50B376;
+$green: #50B376;
 $green-black: #57B251;
 * {
     margin: 0px;
 }
 
 body {
+    font-family: 'Roboto';
+    font-weight: 500;
     margin: 0px;
     background-color: $black;
     color: $white;

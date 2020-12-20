@@ -24,12 +24,13 @@
 }
 
 .link {
+    font-size: 18px;
     color: $white;
     text-decoration: none;
 }
 
 .link:hover {
-    text-decoration: underline;
+    color: $green;
 }
 
 
@@ -60,6 +61,7 @@
 
 .navbar__list__item {
     text-align: center;
+    margin: 15px;
 }
 
 .toggleOn {
@@ -67,7 +69,8 @@
 }
 
 .active {
-    color: red;
+    pointer-events: none;
+    color: $green;
 }
 
 
@@ -85,6 +88,7 @@
         display: flex;
     }
     .navbar__list__item {
-        padding-left: 20px
+        padding-left: 25px;
+        margin: 0px
     }
 }
