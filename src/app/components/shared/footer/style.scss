@@ -1,17 +1,15 @@
 @import '../../../../styles.scss';
-.footer {
+.foot {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 80px;
     background-color: $grey;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    height: 80px;
+    width: 100%;
 }
 
-.footer__copy {
+.foot__copy {
     color: $white;
     font-size: 14px;
 }

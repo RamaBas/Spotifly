@@ -12,10 +12,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  toggleMenu(menu){
+  toggleMenu(menu,button){
     if (menu.classList.toggle("toggleOn")) {
+      button.innerHTML = "x";
       menu.classList.add('toggleOn');
+
     } else {
+      button.innerHTML = "=";
       menu.classList.remove('toggleOn');
     }
   }

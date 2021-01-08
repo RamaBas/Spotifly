@@ -1,0 +1,41 @@
+@import '../../../styles.scss';
+// Search style
+.wrapper {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.search {
+    border: 1px solid $grey;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: $white;
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+}
+
+.clear-icon {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    width: 12px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.search:hover,
+.search:focus {
+    border: 1px solid $green;
+    background-color: $white;
+}
