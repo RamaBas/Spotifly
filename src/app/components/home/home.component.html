@@ -1,8 +1,2 @@
-<main class="cards">
-    <article *ngFor="let album of albums" class="cards__item">
-        <img class="cards__item__img" [src]="album.images[0].url" [alt]="album.name">
-        <div class="cards__item__text">
-            <h3>{{album.name}}</h3>
-        </div>
-    </article>
-</main>
+<app-loading></app-loading>
+<app-cards [items]="albums"></app-cards>

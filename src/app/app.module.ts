@@ -15,6 +15,9 @@ import { ROUTES } from './app.routes';
 
 //Import Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { CardsComponent } from './components/cards/cards.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,15 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     ArtistComponent,
     NavbarComponent,
     FooterComponent,
-    NoimagePipe
+    NoimagePipe,
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot( ROUTES, {useHash: true} )
+    RouterModule.forRoot( ROUTES, {useHash: true} ),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

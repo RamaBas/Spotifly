@@ -1,13 +1,4 @@
 <div class="wrapper">
     <input #name type="text" (keyup)="searchArtist(name.value)" placeholder="Search Artist" class="search">
 </div>
-
-
-<main class="cards">
-    <article *ngFor="let artist of artists" class="cards__item">
-        <img class="cards__item__img" [src]="artist.images | noimage" [alt]="artist.name">
-        <div class="cards__item__text">
-            <h3>{{artist.name}}</h3>
-        </div>
-    </article>
-</main>
+<app-cards [items]="artists"></app-cards>
