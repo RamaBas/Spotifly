@@ -1,5 +1,5 @@
 <main class="cards">
-    <article *ngFor="let item of items" class="cards__item">
+    <article (click)="viewArtist( item )" *ngFor="let item of items" class="cards__item pointer">
         <img class="cards__item__img" [src]="item.images | noimage" [alt]="item.name">
         <div class="cards__item__text">
             <h3>{{item.name}}</h3>
