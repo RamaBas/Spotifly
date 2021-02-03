@@ -1,6 +1,8 @@
-<app-navbar></app-navbar>
-<div class="container">
-    <fa-icon [icon]="faCoffee"></fa-icon>
-    <router-outlet></router-outlet>
+<div class="main">
+    <app-navbar></app-navbar>
+    <div class="main__container">
+
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer class="main__footer"></app-footer>
 </div>
-<app-footer class="footer"></app-footer>

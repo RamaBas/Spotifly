@@ -5,10 +5,10 @@
     </div>
     <ul #menu class="navbar__list">
         <li class="navbar__list__item">
-            <a routerLink="home" class="link" routerLinkActive="active">Home</a>
+            <a (click)="toggleMenu(menu,button)" routerLink="home" class="link" routerLinkActive="active">Home</a>
         </li>
         <li class="navbar__list__item">
-            <a routerLink="search" class="link" routerLinkActive="active">Search</a>
+            <a (click)="toggleMenu(menu,button)" routerLink="search" class="link" routerLinkActive="active">Search</a>
         </li>
 
     </ul>

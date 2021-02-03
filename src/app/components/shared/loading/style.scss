@@ -1,0 +1,10 @@
+@import '../../../../styles.scss';
+.loading {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.loading__ico {
+    color: $green;
+}

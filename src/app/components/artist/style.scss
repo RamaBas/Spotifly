@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.art__name {
+    margin: auto 10px;
+    a {
+        color: $green-black;
+        font-size: small;
+        text-decoration: none;
+    }
+}
+
+.art_return {
+    margin: 0px auto;
+}
+
+.faIcon {
+    color: white;
+    margin-right: 5px;
+}
+
+.art_return>button {
+    background-color: $black;
+    color: #f44336;
+    border: 1px solid #f44336;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.art_return>button:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid $white;
+}
+
+th {
+    background-color: $green-black;
+    color: white;
+}

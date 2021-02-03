@@ -8,11 +8,6 @@ $green-black: #57B251;
     margin: 0px;
 }
 
-.container {
-    margin: 30px;
-    min-height: 100%;
-}
-
 body {
     font-family: 'Roboto';
     font-weight: 500;
@@ -21,9 +16,20 @@ body {
     color: $white;
 }
 
-.footer {
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main__container {
+    margin: 30px;
+}
+
+.main__footer {
     width: 100%;
     height: 80px;
+    margin-top: auto;
 }
 
 input {
@@ -64,16 +70,6 @@ input {
     font-family: 'Roboto';
 }
 
-
-/** b
-hr {
-    border-color: white;
-}
-
-.puntero {
-    cursor: pointer;
-}
-
 .img-circle {
     border-radius: 100%;
     width: 150px;
@@ -92,9 +88,21 @@ hr {
     margin-left: 5px;
 }
 
+
+/* Others */
+
+.pointer {
+    cursor: pointer;
+}
+
 .img-thumb {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.img-circle {
+    border-radius: 100% !important;
+    border: 3px solid $white;
 }
 
 
